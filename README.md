@@ -46,11 +46,13 @@ Copie o endpoint `/add_store` — ele será usado pelo script de instalação.
 
 No computador remoto (Windows), execute o PowerShell como administrador e rode:
 (Definir senha padrão para conexão automática)
+
+ConfigString pode ser coletado diretamente no rustdesk, ao ir em configurações de rede dentro do software, é possivel copiar a string de configuração interna.
 ```
 $password     = ""
 $configString = ""
 ```
-ConfigString pode ser coletado diretamente no rustdesk, ao ir em configurações de rede dentro do software, é possivel copiar a string de configuração interna.
+
 
 ```powershell
 .\install_and_config_rustdesk.ps1
