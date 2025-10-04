@@ -27,10 +27,15 @@ O sistema é composto por dois componentes principais:
 ## Como Usar
 
 ### 1. Inicie o servidor central
+(Criar senha padrão para conexão automática)
+```
+ self.password = (null)
+``` 
 
 ```bash
 python ngrok_server.py
 ```
+
 
 A interface será aberta automaticamente. O console exibirá:
 - O URL público via ngrok 
@@ -40,6 +45,12 @@ Copie o endpoint `/add_store` — ele será usado pelo script de instalação.
 ### 2. Execute o script de configuração no cliente
 
 No computador remoto (Windows), execute o PowerShell como administrador e rode:
+(Definir senha padrão para conexão automática)
+```
+$password     = ""
+$configString = ""
+```
+ConfigString pode ser coletado diretamente no rustdesk, ao ir em configurações de rede dentro do software, é possivel copiar a string de configuração interna.
 
 ```powershell
 .\install_and_config_rustdesk.ps1
